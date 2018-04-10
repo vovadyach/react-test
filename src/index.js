@@ -17,8 +17,8 @@ axios.interceptors.request.use(request => {
     console.log(error);
 
     return Promise.reject(error);
-});
-
+}); 
+ 
 axios.interceptors.response.use(response => {
     console.log(response);
     return response;
@@ -29,3 +29,4 @@ axios.interceptors.response.use(response => {
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
+ 
